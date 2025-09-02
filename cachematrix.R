@@ -11,7 +11,7 @@ makeCacheMatrix <- function(x = matrix()) {
                
                 set <- function(y) {  # set() Updates the matrix x and resets the cached inverse to NULL
                         x <<- y #<<- assigns to variables in the parent environment
-                        inv <<- NULL  # Reinicia la inversa si se cambia la matriz
+                        inv <<- NULL  # Resets the inverse if the matrix is changed.
                 }
                 
                 get <- function() x #Returns the current matrix.
